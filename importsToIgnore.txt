@@ -1,0 +1,12 @@
+// be as specific as needed, requires a '*' at the end
+java.*
+javax.*
+lombok.*
+org.springframework.*
+springfox.*
+com.fasterxml.*
+io.*
+org.*
+de.fraunhofer.DigiTales2Go.security.*
+de.fraunhofer.DigiTales2Go.swagger.*
+de.fraunhofer.DigiTales2Go.dataStructure.dataStructureSubclasses.*

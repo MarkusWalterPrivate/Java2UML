@@ -1,0 +1,8 @@
+//Will ignore all classes listed here. You have two options:
+// 1. name the full package declaration of a class to only remove that one or
+// 2. name a suffix matching class names beginning with * (can be part of a name, or even partial path)
+*DTO
+de.fraunhofer.DigiTales2Go.dataStructure.dataStructureSubclasses.Pageable.Pageable
+*jwt.JwtTokenProvider
+*Controller
+*Repository

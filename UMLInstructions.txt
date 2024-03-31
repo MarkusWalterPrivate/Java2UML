@@ -1,0 +1,252 @@
+package feed{
+class FeedService{
+}
+class ItemLibrary{
+}
+}
+class DigiTales2GoApplication{
+}
+package dataStructure{
+package bookmark{
+class Bookmark{
+}
+class BookmarkService{
+}
+}
+package rating{
+class Rating{
+}
+class RatingService{
+}
+}
+package items{
+package trend{
+class Trend{
+}
+class TrendService{
+}
+package subclasses{
+class TrendRequired{
+}
+class TrendOptional{
+}
+}
+}
+package project{
+class Project{
+}
+class ProjectService{
+}
+package subclasses{
+package subsubclases{
+class Runtime{
+}
+class ProjectRelations{
+}
+}
+class ProjectOptional{
+}
+class ProjectRequired{
+}
+}
+}
+package company{
+class Company{
+}
+class CompanyService{
+}
+package subclasses{
+package optionalSubclasses{
+class CompanyOptionalLists{
+}
+package optionalFieldSubclasses{
+class Location{
+}
+}
+class CompanyOptionalFields{
+}
+}
+class CompanyOptional{
+}
+package requiredSubclasses{
+class TeamSize{
+}
+}
+class CompanyRequired{
+}
+}
+}
+package technology{
+class Technology{
+}
+package subclasses{
+class TechRequired{
+}
+class TechOptional{
+}
+}
+class TechnologyService{
+}
+}
+}
+package user{
+class UserService{
+}
+class AppUser{
+}
+}
+package linkingServices{
+package commentLinkServices{
+class CommentLinker{
+}
+class CommentLinkRemover{
+}
+}
+package itemLinkServices{
+class ItemLinker{
+}
+class ItemListGenerator{
+}
+class ItemLinkRemover{
+}
+}
+package ratingLinkServices{
+class RatingLinker{
+}
+class RatingLinkRemover{
+}
+}
+}
+}
+dataStructure.items.project.subclasses.ProjectOptional --> dataStructure.items.project.subclasses.subsubclases.ProjectRelations
+dataStructure.bookmark.BookmarkService --> dataStructure.rating.Rating
+dataStructure.bookmark.BookmarkService --> dataStructure.user.AppUser
+dataStructure.bookmark.BookmarkService --> feed.ItemLibrary
+dataStructure.rating.Rating --> dataStructure.user.AppUser
+dataStructure.linkingServices.commentLinkServices.CommentLinkRemover --> dataStructure.items.company.Company
+dataStructure.linkingServices.commentLinkServices.CommentLinkRemover --> dataStructure.items.project.Project
+dataStructure.linkingServices.commentLinkServices.CommentLinkRemover --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.commentLinkServices.CommentLinkRemover --> dataStructure.items.trend.Trend
+dataStructure.linkingServices.commentLinkServices.CommentLinkRemover --> dataStructure.user.AppUser
+feed.ItemLibrary --> dataStructure.items.company.Company
+feed.ItemLibrary --> dataStructure.items.project.Project
+feed.ItemLibrary --> dataStructure.items.technology.Technology
+feed.ItemLibrary --> dataStructure.items.trend.Trend
+dataStructure.user.AppUser --> dataStructure.bookmark.Bookmark
+dataStructure.user.AppUser --> dataStructure.rating.Rating
+dataStructure.items.company.CompanyService --> dataStructure.bookmark.Bookmark
+dataStructure.items.company.CompanyService --> dataStructure.items.company.subclasses.CompanyOptional
+dataStructure.items.company.CompanyService --> dataStructure.items.company.subclasses.CompanyRequired
+dataStructure.items.company.CompanyService --> dataStructure.linkingServices.itemLinkServices.ItemLinkRemover
+dataStructure.items.company.CompanyService --> dataStructure.linkingServices.itemLinkServices.ItemLinker
+dataStructure.items.company.CompanyService --> dataStructure.linkingServices.itemLinkServices.ItemListGenerator
+dataStructure.items.company.CompanyService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.items.company.CompanyService --> dataStructure.rating.Rating
+dataStructure.items.company.CompanyService --> dataStructure.user.AppUser
+dataStructure.items.company.CompanyService --> feed.ItemLibrary
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.items.company.Company
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.items.project.Project
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.items.trend.Trend
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.rating.Rating
+dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover --> dataStructure.user.AppUser
+dataStructure.items.project.subclasses.ProjectRequired --> dataStructure.items.project.subclasses.subsubclases.Runtime
+dataStructure.items.company.subclasses.optionalSubclasses.CompanyOptionalFields --> dataStructure.items.company.subclasses.optionalSubclasses.optionalFieldSubclasses.Location
+dataStructure.linkingServices.itemLinkServices.ItemListGenerator --> dataStructure.items.company.Company
+dataStructure.linkingServices.itemLinkServices.ItemListGenerator --> dataStructure.items.project.Project
+dataStructure.linkingServices.itemLinkServices.ItemListGenerator --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.itemLinkServices.ItemListGenerator --> dataStructure.items.trend.Trend
+dataStructure.items.trend.TrendService --> dataStructure.bookmark.Bookmark
+dataStructure.items.trend.TrendService --> dataStructure.items.trend.subclasses.TrendOptional
+dataStructure.items.trend.TrendService --> dataStructure.items.trend.subclasses.TrendRequired
+dataStructure.items.trend.TrendService --> dataStructure.linkingServices.itemLinkServices.ItemLinkRemover
+dataStructure.items.trend.TrendService --> dataStructure.linkingServices.itemLinkServices.ItemLinker
+dataStructure.items.trend.TrendService --> dataStructure.linkingServices.itemLinkServices.ItemListGenerator
+dataStructure.items.trend.TrendService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.items.trend.TrendService --> dataStructure.rating.Rating
+dataStructure.items.trend.TrendService --> dataStructure.user.AppUser
+dataStructure.items.trend.TrendService --> feed.ItemLibrary
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.items.company.Company
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.items.project.Project
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.items.trend.Trend
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.rating.Rating
+dataStructure.linkingServices.ratingLinkServices.RatingLinker --> dataStructure.user.AppUser
+dataStructure.items.technology.TechnologyService --> dataStructure.bookmark.Bookmark
+dataStructure.items.technology.TechnologyService --> dataStructure.items.technology.subclasses.TechOptional
+dataStructure.items.technology.TechnologyService --> dataStructure.items.technology.subclasses.TechRequired
+dataStructure.items.technology.TechnologyService --> dataStructure.linkingServices.itemLinkServices.ItemLinkRemover
+dataStructure.items.technology.TechnologyService --> dataStructure.linkingServices.itemLinkServices.ItemLinker
+dataStructure.items.technology.TechnologyService --> dataStructure.linkingServices.itemLinkServices.ItemListGenerator
+dataStructure.items.technology.TechnologyService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.items.technology.TechnologyService --> dataStructure.rating.Rating
+dataStructure.items.technology.TechnologyService --> dataStructure.user.AppUser
+dataStructure.items.technology.TechnologyService --> feed.ItemLibrary
+feed.FeedService --> dataStructure.bookmark.Bookmark
+feed.FeedService --> dataStructure.items.company.Company
+feed.FeedService --> dataStructure.items.project.Project
+feed.FeedService --> dataStructure.items.technology.Technology
+feed.FeedService --> dataStructure.items.trend.Trend
+feed.FeedService --> dataStructure.rating.Rating
+feed.FeedService --> dataStructure.user.AppUser
+dataStructure.items.trend.Trend --> dataStructure.items.company.Company
+dataStructure.items.trend.Trend --> dataStructure.items.project.Project
+dataStructure.items.trend.Trend --> dataStructure.items.technology.Technology
+dataStructure.items.trend.Trend --> dataStructure.items.trend.subclasses.TrendOptional
+dataStructure.items.trend.Trend --> dataStructure.items.trend.subclasses.TrendRequired
+dataStructure.items.trend.Trend --> dataStructure.rating.Rating
+dataStructure.items.company.subclasses.CompanyRequired --> dataStructure.items.company.subclasses.requiredSubclasses.TeamSize
+dataStructure.rating.RatingService --> dataStructure.items.company.Company
+dataStructure.rating.RatingService --> dataStructure.items.project.Project
+dataStructure.rating.RatingService --> dataStructure.items.technology.Technology
+dataStructure.rating.RatingService --> dataStructure.items.trend.Trend
+dataStructure.rating.RatingService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.rating.RatingService --> dataStructure.linkingServices.ratingLinkServices.RatingLinker
+dataStructure.rating.RatingService --> dataStructure.user.AppUser
+dataStructure.rating.RatingService --> feed.ItemLibrary
+dataStructure.items.project.Project --> dataStructure.items.company.Company
+dataStructure.items.project.Project --> dataStructure.items.project.subclasses.ProjectOptional
+dataStructure.items.project.Project --> dataStructure.items.project.subclasses.ProjectRequired
+dataStructure.items.project.Project --> dataStructure.items.technology.Technology
+dataStructure.items.project.Project --> dataStructure.items.trend.Trend
+dataStructure.items.project.Project --> dataStructure.rating.Rating
+dataStructure.linkingServices.itemLinkServices.ItemLinkRemover --> dataStructure.items.company.Company
+dataStructure.linkingServices.itemLinkServices.ItemLinkRemover --> dataStructure.items.project.Project
+dataStructure.linkingServices.itemLinkServices.ItemLinkRemover --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.itemLinkServices.ItemLinkRemover --> dataStructure.items.trend.Trend
+dataStructure.items.company.subclasses.CompanyOptional --> dataStructure.items.company.subclasses.optionalSubclasses.CompanyOptionalFields
+dataStructure.items.company.subclasses.CompanyOptional --> dataStructure.items.company.subclasses.optionalSubclasses.CompanyOptionalLists
+dataStructure.user.UserService --> dataStructure.bookmark.Bookmark
+dataStructure.user.UserService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.user.UserService --> dataStructure.rating.Rating
+dataStructure.user.UserService --> feed.ItemLibrary
+dataStructure.items.company.Company --> dataStructure.items.company.subclasses.CompanyOptional
+dataStructure.items.company.Company --> dataStructure.items.company.subclasses.CompanyRequired
+dataStructure.items.company.Company --> dataStructure.items.project.Project
+dataStructure.items.company.Company --> dataStructure.items.technology.Technology
+dataStructure.items.company.Company --> dataStructure.items.trend.Trend
+dataStructure.items.company.Company --> dataStructure.rating.Rating
+dataStructure.items.project.ProjectService --> dataStructure.bookmark.Bookmark
+dataStructure.items.project.ProjectService --> dataStructure.items.project.subclasses.ProjectOptional
+dataStructure.items.project.ProjectService --> dataStructure.items.project.subclasses.ProjectRequired
+dataStructure.items.project.ProjectService --> dataStructure.linkingServices.itemLinkServices.ItemLinkRemover
+dataStructure.items.project.ProjectService --> dataStructure.linkingServices.itemLinkServices.ItemLinker
+dataStructure.items.project.ProjectService --> dataStructure.linkingServices.itemLinkServices.ItemListGenerator
+dataStructure.items.project.ProjectService --> dataStructure.linkingServices.ratingLinkServices.RatingLinkRemover
+dataStructure.items.project.ProjectService --> dataStructure.rating.Rating
+dataStructure.items.project.ProjectService --> dataStructure.user.AppUser
+dataStructure.items.project.ProjectService --> feed.ItemLibrary
+dataStructure.linkingServices.itemLinkServices.ItemLinker --> dataStructure.items.company.Company
+dataStructure.linkingServices.itemLinkServices.ItemLinker --> dataStructure.items.project.Project
+dataStructure.linkingServices.itemLinkServices.ItemLinker --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.itemLinkServices.ItemLinker --> dataStructure.items.trend.Trend
+dataStructure.linkingServices.commentLinkServices.CommentLinker --> dataStructure.items.company.Company
+dataStructure.linkingServices.commentLinkServices.CommentLinker --> dataStructure.items.project.Project
+dataStructure.linkingServices.commentLinkServices.CommentLinker --> dataStructure.items.technology.Technology
+dataStructure.linkingServices.commentLinkServices.CommentLinker --> dataStructure.items.trend.Trend
+dataStructure.items.technology.Technology --> dataStructure.items.company.Company
+dataStructure.items.technology.Technology --> dataStructure.items.project.Project
+dataStructure.items.technology.Technology --> dataStructure.items.technology.subclasses.TechOptional
+dataStructure.items.technology.Technology --> dataStructure.items.technology.subclasses.TechRequired
+dataStructure.items.technology.Technology --> dataStructure.items.trend.Trend
+dataStructure.items.technology.Technology --> dataStructure.rating.Rating

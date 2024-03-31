@@ -1,0 +1,3 @@
+//start with most specific package prefix to remove from UML declaration.
+de.fraunhofer.DigiTales2Go
+de.fraunhofer
